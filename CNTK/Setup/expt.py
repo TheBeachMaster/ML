@@ -36,8 +36,8 @@ mysamplesize = 32
 features, labels = generate_random_data_sample(mysamplesize, input_dim, num_output_classes)
  
  
-import matplotlib.pyplot as plt
 %matplotlib inline
+import matplotlib.pyplot as plt
  
 # given this is a 2 class () 
 colors = ['r' if l == 0 else 'b' for l in labels[:,0]]
