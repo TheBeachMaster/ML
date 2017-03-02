@@ -3,7 +3,7 @@
 import numpy as np
 import sys
 import os
-from cntk import Trainer, cntk_device, StreamConfiguration, learning_rate_schedule, UnitType
+from cntk import Trainer, StreamConfiguration, learning_rate_schedule, UnitType
 from cntk.device import cpu, set_default_device
 from cntk.learner import sgd
 from cntk.ops import *
