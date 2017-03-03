@@ -1,6 +1,5 @@
 from __future__ import absolute_import
 from __future__ import division
-from __future__ import print_function
 
 import tensorflow as tf
 import numpy as np
@@ -26,7 +25,7 @@ feature_columns = [tf.contrib.layers.real_valued_column("", dimension=4)]
 classifier = tf.contrib.learn.DNNClassifier(feature_columns=feature_columns,
                                             hidden_units=[10, 20, 10],
                                             n_classes=3,
-                                            model_dir="/tmp/iris_model")
+                                            model_dir="/RepoMan/ML/Tensorflow/KU/temp/iris_model")
 
 # Fit model.
 classifier.fit(x=training_set.data,
