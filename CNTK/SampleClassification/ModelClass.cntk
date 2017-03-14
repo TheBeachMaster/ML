@@ -1,0 +1,20 @@
+# ModelClass.cntk
+
+command=Train:WriteProbs:DumpWeights:Test
+# system parameters
+
+Train = [
+    action="train"
+    BrainScriptNetworkBuilder = [
+        # network definition
+    ]
+]
+Test = [
+    # training
+]
+WriteProbs = [
+    # output
+]
+DumpWeights = [
+    
+]
