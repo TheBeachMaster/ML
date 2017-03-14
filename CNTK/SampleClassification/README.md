@@ -27,6 +27,6 @@ That a Folder *ModelOut* will be created during the training session
 1. Your model will not correctly evaluate 1 out of 9 of the datasets : 
 ![Error][error] 
 
-[error]:/milestones/error.png
+[error]:CNTK/SampleClassification/milestones/error.png
 </details>
 </summary>
