@@ -2,7 +2,7 @@
 
 command=Train:WriteProbs:DumpWeights:Test
 
-modelPath = "Model\SimpleNet.snn"
+modelPath = "ModelOut\SimpleNet.snn"
 deviceId = -1
 dimension = 2 
 labelDimension = 3
