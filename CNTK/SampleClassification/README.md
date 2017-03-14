@@ -8,7 +8,8 @@
 Here's how you set up this project : 
 
 ### Auto
-1. Clone this repo (gist should be out soon) 
+1. Clone this repo ~(gist should be out soon)~ [This Gist is available](https://gist.github.com/TheBeachMaster/1f9c442e9f25e2470207d560bbfd826f)  
+
 2. On *Windows* open up command prompt and type the following (from your project directory) 
 3. Type the following `cntk.exe configFile=ModelClass.cntk makeMode=false` 
 4. If you want to do it manually ,ensure you have the `.cntk` file and the Test and Training Data 
