@@ -25,8 +25,15 @@ That a Folder *ModelOut* will be created during the training session
 <details> 
 
 1. Your model will not correctly evaluate 1 out of 9 of the datasets : 
-![alt Error][error] 
+![alt Error][error]  
+2. It might take a couple of minutes or hours(on slow PCs)to train the model 
+![alt Training][train] 
+3. The data dumped in the ModelOut directory should help you fix issues that may result due to an overfit or underfit model 
+![alt ModelOut][model] 
 
-[error]:milestones/error.png
+
+[error]:milestones/error.png 
+[train]:milestones/firstestrun.png 
+[model]:milestones/ml.png
 </details>
 </summary>
