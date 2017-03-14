@@ -25,7 +25,7 @@ That a Folder *ModelOut* will be created during the training session
 <details> 
 
 1. Your model will not correctly evaluate 1 out of 9 of the datasets : 
-![Error][error] 
+![alt Error][error] 
 
 [error]:milestones/error.png
 </details>
