@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="lib/onsenui/js/app.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
@@ -67,9 +68,9 @@
       </ons-toolbar>
       
   <div style="text-align: center; margin-top: 30px;">
-    <textarea class="textarea" rows="3" placeholder="Textarea"></textarea>
+    <textarea id="input" class="textarea" rows="3" placeholder="Tell me about yourself..."></textarea>
     <p style="margin-top: 30px;">
-      <ons-button onclick="login()">Sign in</ons-button>
+      <ons-button onclick="submit()">Submit</ons-button>
     </p>
   </div>
     </ons-page>
