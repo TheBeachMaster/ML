@@ -1,7 +1,7 @@
 var submit = function() {
   var data = document.getElementById('input').value;
   
-  if (username != '') {
+  if (data != '') {
     ons.notification.alert('Congratulations!');
   }
   else {
