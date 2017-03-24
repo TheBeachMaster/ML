@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,26 +15,26 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-    ons.ready(function() {
+    ons.ready(function () {
       console.log("Onsen UI is ready!");
     });
 
     window.fn = {};
-    window.fn.open = function() {
+    window.fn.open = function () {
       var menu = document.getElementById('menu');
       menu.open();
     };
-    window.fn.load = function(page) {
+    window.fn.load = function (page) {
       var content = document.getElementById('content');
       var menu = document.getElementById('menu');
       content
         .load(page)
         .then(menu.close.bind(menu));
     };
-
   </script>
 
 </head>
+
 <body>
   <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
@@ -66,49 +67,56 @@
           Main
         </div>
       </ons-toolbar>
-      
-  <div style="text-align: center; margin-top: 30px;">
-    <textarea id="input" class="textarea" rows="3" placeholder="Tell me about yourself..."></textarea>
-    <p style="margin-top: 30px;">
-      <ons-button onclick="submit()">Submit</ons-button>
-    </p>
-  </div>
+        <div style="text-align: center; margin-top: 30px;">
+          <textarea id="input" class="textarea" rows="3" placeholder="Tell me about yourself..."></textarea>
+          <p style="margin-top: 30px;">
+            <ons-button onclick="submit()">Submit</ons-button>
+          </p>
+        </div>
+          <ons-list id="list">
+            <ons-list-header>Analysis</ons-list-header>
+            <div id="classif">
 
-  <div>
-    
-  </div>
+            </div>
+    <!--<ons-list-item id="listH" modifier="longdivider">Item A</ons-list-item>
+    <ons-list-item modifier="longdivider">Item B</ons-list-item>
+          </ons-list>-->
+      <div>
+
+      </div>
     </ons-page>
   </ons-template>
 
   <ons-template id="settings.html">
-  <ons-page>
-    <ons-toolbar>
-      <div class="left">
-        <ons-toolbar-button onclick="fn.open()">
-          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
-        </ons-toolbar-button>
-      </div>
-      <div class="center">
-        Settings
-      </div>
-    </ons-toolbar>
-  </ons-page>
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Settings
+        </div>
+      </ons-toolbar>
+    </ons-page>
   </ons-template>
 
   <ons-template id="about.html">
-  <ons-page>
-    <ons-toolbar>
-      <div class="left">
-        <ons-toolbar-button onclick="fn.open()">
-          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
-        </ons-toolbar-button>
-      </div>
-      <div class="center">
-        About
-      </div>
-    </ons-toolbar>
-  </ons-page>
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          About
+        </div>
+      </ons-toolbar>
+    </ons-page>
   </ons-template>
 
 </body>
+
 </html>
