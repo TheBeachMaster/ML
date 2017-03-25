@@ -7,7 +7,10 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-data = '{"texts":["yeah right"]}'
+data = '{"texts":["I do not like cows"]}'
 
-requests.post('https://api.uclassify.com/v1/ArthurKenOtieno/democlassifier/classify', headers=headers, data=data)
+response = requests.post('https://api.uclassify.com/v1/ArthurKenOtieno/democlassifier/classify', headers=headers, data=data)
 
+python_data = response.json()
+print(type(python_data))
+print(python_data)
