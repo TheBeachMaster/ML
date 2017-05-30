@@ -10,4 +10,6 @@ g = tf.add(b, d)
 h = tf.multiply(g, f)
 
 with tf.Session() as sess:
+	writer = tf.summary.FileWriter("output", sess.graph)
 	print(sess.run(h))
+	writer.close()
